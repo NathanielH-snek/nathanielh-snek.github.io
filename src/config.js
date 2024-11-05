@@ -30,7 +30,7 @@ export const navLogo = Python;
  ************************************************************** 
   Add a custom blog icon or update the hero images for the Main section.
 */
-export const Blog = ".images/mage--linkedin.svg";
+export const Blog = null;
 
 //Extra Images
 
