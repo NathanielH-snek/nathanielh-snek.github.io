@@ -92,8 +92,8 @@ export const skillData = [
   },
   {
     id: 9,
-    skill: <Icon icon="mdi:react" className="display-4" />,
-    name: "React",
+    skill: <Icon icon="tabler:brand-react-native" className="display-4" />,
+    name: "React Native",
     }
 ];
 
