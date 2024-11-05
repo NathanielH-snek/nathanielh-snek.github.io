@@ -36,7 +36,7 @@ const SocialLinks = () => {
         aria-label="Check out my GitHub profile."
         className="link-icons"
       >
-        <Icon icon="icomoon-free:github" />
+        <Icon icon="line-md:github-loop" />
       </a>
       {isSuccess &&
         socialsData.map((element, index) => {

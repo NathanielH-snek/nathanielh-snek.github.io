@@ -7,6 +7,7 @@ import PropTypes from "prop-types";
 import { Element } from "react-scroll";
 import { Col, Container, Row } from "react-bootstrap";
 import Title from "./Title";
+import { profilePic } from "../config";
 
 // #region styled-components
 const StyledAboutMe = styled.section`
@@ -44,7 +45,8 @@ const AboutMe = ({ avatar_url, bio, moreInfo }) => {
             </Col>
             <Col className="d-none d-md-block text-center">
               <img
-                src={avatar_url}
+                //src={avatar_url}
+                src={profilePic}
                 alt="GitHub Avatar"
                 loading="lazy"
                 className="mx-auto rounded-circle border border-primary-subtle"

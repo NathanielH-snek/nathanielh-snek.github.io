@@ -9,16 +9,20 @@ import HeroLight from "./images/hero-light.jpg";
 import HeroDark from "./images/hero-dark.jpg";
 
 // Projects Images (add your images to the images directory and import below)
-import Profile from "./images/profile.jpeg"
-import Logo from "./images/logo.svg"
+import Profile from "./images/profile.jpg"
+// import Logo from "./images/logo.svg"
 import Python from "./images/catppuccin--python.svg"
+import NLP from "./images/carbon--text-link-analysis.svg"
+import SNA from "./images/eos-icons--neural-network.svg"
+import QT from "./images/file-icons--qt.svg"
+
 
 /* START HERE
  **************************************************************
   Add your GitHub username (string - "YourUsername") below.
 */
 export const githubUsername = "NathanielH-snek";
-
+export const profilePic = Profile
 // Navbar Logo image
 export const navLogo = Python;
 
@@ -26,7 +30,9 @@ export const navLogo = Python;
  ************************************************************** 
   Add a custom blog icon or update the hero images for the Main section.
 */
-export const Blog = null;
+export const Blog = ".images/mage--linkedin.svg";
+
+//Extra Images
 
 // Hero images (imported above - lines 8-9)
 export { HeroLight as Light };
@@ -46,65 +52,73 @@ export const moreInfo =
 export const skillData = [
   {
     id: 1,
-    skill: <Icon icon="mdi:language-html5" className="display-4" />,
-    name: "HTML5",
+    skill: <Icon icon="catppuccin:python-compiled" className="display-4"/>,
+    name: "Python",
   },
   {
     id: 2,
-    skill: <Icon icon="ion:logo-css3" className="display-4" />,
-    name: "CSS3",
+    skill: <Icon icon="carbon:sql" className="display-4" />,
+    name: "SQL",
   },
   {
     id: 3,
-    skill: <Icon icon="fa6-brands:js" className="display-4" />,
-    name: "JavaScript",
+    skill: <Icon icon="cib:rstudio" className="display-4" />,
+    name: "R",
   },
   {
     id: 4,
-    skill: <Icon icon="ri:bootstrap-fill" className="display-4" />,
-    name: "BootStrap",
+    skill: <Icon icon="mdi:fedora" className="display-4" />,
+    name: "Linux",
   },
   {
     id: 5,
-    skill: <Icon icon="mdi:react" className="display-4" />,
-    name: "React",
+    skill: <Icon icon="mdi:flask" className="display-4" />,
+    name: "Flask",
   },
   {
     id: 6,
-    skill: <Icon icon="file-icons:styledcomponents" className="display-4" />,
-    name: "Styled Components",
+    skill: <Icon icon="eos-icons:cloud-computing" className="display-4" />,
+    name: "Cloud Computing",
   },
   {
     id: 7,
-    skill: <Icon icon="akar-icons:redux-fill" className="display-4" />,
-    name: "Redux",
-  },
-  {
-    id: 8,
     skill: <Icon icon="bi:git" className="display-4" />,
     name: "Git",
   },
   {
-    id: 9,
+    id: 8,
     skill: <Icon icon="fa6-brands:square-github" className="display-4" />,
     name: "GitHub",
   },
+  {
+    id: 9,
+    skill: <Icon icon="mdi:react" className="display-4" />,
+    name: "React",
+    }
 ];
 
 // Resume link (string - "https://YourResumeUrl") - I am using CloudFront to share my resume (https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html)
-export const resume = null;
+export const resume = "https://docs.google.com/document/d/e/2PACX-1vQzHonMQoirGW-HjEtL1EUVHcaSOAD8aS4eArslXm1aPeP6pTwzfcNZkG2grdPKVregtErykrjZgXvW/pub";
 
 /* Projects
  ************************************************************** 
   List the repo names (string - "your-repo-name") you want to include (they will be sorted alphabetically). If empty, only the first 3 will be included.
 */
-export const filteredProjects = ["example-1", "example-2", "example-3"];
+export const filteredProjects = ["SteamReviewTextAnalysis", "RedditTopicSocialNetworkAnalysis", "Med2XLPy"];
 
 // Replace the default GitHub image for matching repos below (images imported above - lines 7-8)
 export const projectCardImages = [
   {
-    name: "example-1",
-    image: Logo,
+    name: "SteamReviewTextAnalysis",
+    image: NLP,
+  },
+  {
+    name: "RedditTopicSocialNetworkAnalysis",
+    image: SNA,
+  },
+  {
+    name: "Med2XLPy",
+    image: QT,
   },
 ];
 

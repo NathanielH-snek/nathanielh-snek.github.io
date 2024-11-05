@@ -8,6 +8,7 @@ const spin = keyframes`
     }
 `;
 
+
 const Loading = styled.div`
   display: inline-block;
   width: 5rem;
@@ -18,6 +19,7 @@ const Loading = styled.div`
   margin: 1rem auto;
   animation: ${spin} 0.6s linear infinite;
 `;
+
 // #endregion
 
 export default Loading;

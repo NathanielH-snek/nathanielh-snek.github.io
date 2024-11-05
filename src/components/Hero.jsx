@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 // Icons
 import { Icon } from "@iconify/react";
 // Images
-import Logo from "../images/logo.svg";
+import Logo from "../images/defaultNavLogo.svg";
 import { Light, Dark } from "../config";
 // Components
 import { useErrorBoundary } from "react-error-boundary";
@@ -15,6 +15,7 @@ import { Button, Col, Container, Row } from "react-bootstrap";
 import SocialLinks from "./SocialLinks";
 
 // #region styled-components
+/*
 const spin = keyframes`
   from {
     transform: rotate(0deg);
@@ -23,6 +24,61 @@ const spin = keyframes`
     transform: rotate(360deg);
   }
 `;
+
+const fadein = keyframes`
+  0% {
+  opacity: 0;
+  }
+  100% {
+  opacity: 1;
+  }
+`;
+
+const delay = keyframes`
+  0% {
+      opacity: 1;
+  }
+    50% {
+      opacity: 1;
+  }
+    50.01% {
+      opacity: 0;
+  }
+    100% {
+      opacity: 0;
+  } 
+`;
+*/
+const jello = keyframes`
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  
+  30% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  
+  40% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  
+  50% {
+    transform: scale3d(0.85, 1.15, 1);
+  }
+  
+  65% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  
+  75% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+`;
+
 
 const StyledHero = styled.header`
   position: relative;
@@ -67,7 +123,7 @@ const StyledHero = styled.header`
 
   @media (prefers-reduced-motion: no-preference) {
     .hero-img {
-      animation: ${spin} infinite 20s linear;
+      animation: ${jello} 2s;
     }
   }
 
