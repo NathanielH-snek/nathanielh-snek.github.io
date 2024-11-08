@@ -100,11 +100,6 @@ export const skillData = [
     skill: <Icon icon="devicon-plain:pandas" className="display-4" />,
     name: "Pandas",
   },
-  {
-    id: 11,
-    skill: <Icon icon="tabler:brand-react-native" className="display-4" />,
-    name: "React Native",
-  }
 ];
 
 // Resume link (string - "https://YourResumeUrl") - I am using CloudFront to share my resume (https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html)
