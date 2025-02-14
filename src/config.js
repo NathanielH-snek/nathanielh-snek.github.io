@@ -43,7 +43,7 @@ export { HeroDark as Dark };
   Add a second paragraph for the about me section.
 */
 export const moreInfo =
-  "I enjoy learning new technologies and skills and continuing to improve my programming abilities";
+  "I enjoy learning new technologies and skills and continuing to improve my programming and mathematical abilities";
 
 /* Skills
  ************************************************************** 
@@ -100,6 +100,11 @@ export const skillData = [
     skill: <Icon icon="devicon-plain:pandas" className="display-4" />,
     name: "Pandas",
   },
+  {
+    id: 11,
+    skill: <Icon icon="catppuccin:rust" className="display-4" />,
+    name: "Rust",
+  }
 ];
 
 // Resume link (string - "https://YourResumeUrl") - I am using CloudFront to share my resume (https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html)
@@ -109,7 +114,7 @@ export const resume = "https://docs.google.com/document/d/e/2PACX-1vQzHonMQoirGW
  ************************************************************** 
   List the repo names (string - "your-repo-name") you want to include (they will be sorted alphabetically). If empty, only the first 3 will be included.
 */
-export const filteredProjects = ["SteamReviewTextAnalysis", "RedditTopicSocialNetworkAnalysis", "Med2XLPy"];
+export const filteredProjects = ["SteamReviewTextAnalysis", "RedditTopicSocialNetworkAnalysis", "Med2XLPy", "MusicETL", "DSSalaryAnalysis", "DiscordBot"];
 
 // Replace the default GitHub image for matching repos below (images imported above - lines 7-8)
 export const projectCardImages = [
