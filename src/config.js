@@ -114,7 +114,18 @@ export const resume = "https://docs.google.com/document/d/e/2PACX-1vQF3onbWHjTCX
  ************************************************************** 
   List the repo names (string - "your-repo-name") you want to include (they will be sorted alphabetically). If empty, only the first 3 will be included.
 */
-export const filteredProjects = ["SteamReviewTextAnalysis", "RedditTopicSocialNetworkAnalysis", "Med2XLPy", "MusicETL", "DSSalaryAnalysis", "DiscordBot", "AdvancedQuantMethods"];
+export const filteredProjects = [
+  "PresidentialSpeechAnalysis",
+  "StackOverflowAISentiment",
+  "SpotifyChartTracker",
+  "AirbnbPricePrediction",
+  "SteamReviewNLP",
+  "DSSalaryAnalysis",
+  "DiscordBot",
+  "Med2XLPy",
+  "piGUI",
+  "ParentalDegreeMonetaryOutcomes"
+];
 
 // Replace the default GitHub image for matching repos below (images imported above - lines 7-8)
 export const projectCardImages = [
